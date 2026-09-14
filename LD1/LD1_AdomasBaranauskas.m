@@ -5,3 +5,16 @@ plot(x, y, 'o-r', x, y/3, 'xb')
 title('Dvi funkcijos')
 xlabel('X-ai')
 ylabel('F_1 [-o-]   |   F_2 [-x-]')
+
+%%
+N = 2
+v = (N+1):0.5:(N+4)
+A = reshape(N:(N+8), 3, 3)
+help reshape
+
+a = A(3, 2)
+b = A(2:3, 1:2)
+c = A([1 3], [1 3])
+
+v_prijungimas = v(1:3);
+A_naujas = [A; v_prijungimas];
